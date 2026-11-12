@@ -24,7 +24,7 @@ buildPythonPackage rec {
 
   postPatch = ''
     substituteInPlace pyproject.toml \
-      --replace-fail "Cython==3.1.1" Cython
+      --replace-fail "Cython~=3.2" Cython
   '';
 
   outputs = [
